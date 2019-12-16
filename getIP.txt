@@ -1,0 +1,23 @@
+## Montrer une addresse IP avant la connection
+## source http://offbytwo.com/2008/05/09/show-ip-address-of-vm-as-console-pre-login-message.html
+
+/sbin/ifconfig | grep "inet addr" | grep -v "127.0.0.1" | awk '{ print $2 }' | awk -F: '{ print $2 }'
+## sert a print l'addresse ip 
+
+
+
+#!/bin/sh
+if [ "$METHOD" = loopback ]; then
+    exit 0
+fi
+
+# Only run from ifup.
+if [ "$MODE" != start ]; then
+    exit 0
+fi
+
+cp /etc/issue-standard /etc/issue
+/usr/local/bin/get-ip-address >> /etc/issue
+echo "" >> /etc/issue
+
+##sert a aller chercher l'ip dans get-ip-address et la montrer pre-login
