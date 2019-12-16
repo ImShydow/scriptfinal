@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream
-## Montrer une addresse IP avant la connection
-## source http://offbytwo.com/2008/05/09/show-ip-address-of-vm-as-console-pre-login-message.html
-
-=======
 
 ## Montrer une addresse IP avant la connection
 ## source http://offbytwo.com/2008/05/09/show-ip-address-of-vm-as-console-pre-login-message.html
@@ -13,9 +8,6 @@
 
 
 
-<<<<<<< Updated upstream
-#!/bin/sh
-=======
 #!/bin/bash
 >>>>>>> Stashed changes
 if [ "$METHOD" = loopback ]; then
