@@ -1,12 +1,23 @@
+<<<<<<< Updated upstream
 ## Montrer une addresse IP avant la connection
 ## source http://offbytwo.com/2008/05/09/show-ip-address-of-vm-as-console-pre-login-message.html
 
+=======
+
+## Montrer une addresse IP avant la connection
+## source http://offbytwo.com/2008/05/09/show-ip-address-of-vm-as-console-pre-login-message.html
+#!/bin/bash
+>>>>>>> Stashed changes
 /sbin/ifconfig | grep "inet addr" | grep -v "127.0.0.1" | awk '{ print $2 }' | awk -F: '{ print $2 }'
 ## sert a print l'addresse ip 
 
 
 
+<<<<<<< Updated upstream
 #!/bin/sh
+=======
+#!/bin/bash
+>>>>>>> Stashed changes
 if [ "$METHOD" = loopback ]; then
     exit 0
 fi
