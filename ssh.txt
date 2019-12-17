@@ -2,4 +2,9 @@
 ssh-keygen 
 ##appuyer sur enter
 
-cat "PermitRootLogin yes" >> /etc/ssh/sshd_config 
+cat "PermitRootLogin no" >> /etc/ssh/sshd_config 
+cat "PasswordAuthentication no" >> /etc/ssh/sshd_config 
+cat "UsePAM no" >> /etc/ssh/sshd_config 
+cat "ChallengeResponseAuthentication no" >> /etc/ssh/sshd_config 
+##seulement etudiant peut aller ssh :
+cat "AllowUsers VincentD >> /etc/ssh/sshd_config 
