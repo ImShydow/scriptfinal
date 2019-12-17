@@ -1,0 +1,5 @@
+## cles ssh
+ssh-keygen 
+##appuyer sur enter
+
+cat "PermitRootLogin yes" >> /etc/ssh/sshd_config 
