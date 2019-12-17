@@ -2,6 +2,10 @@
 ## Montrer une addresse IP avant la connection
 ## source http://offbytwo.com/2008/05/09/show-ip-address-of-vm-as-console-pre-login-message.html
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+## nom du script : get-ip-address
+>>>>>>> Stashed changes
 =======
 ## nom du script : get-ip-address
 >>>>>>> Stashed changes
