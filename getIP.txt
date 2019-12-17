@@ -1,6 +1,10 @@
 
 ## Montrer une addresse IP avant la connection
 ## source http://offbytwo.com/2008/05/09/show-ip-address-of-vm-as-console-pre-login-message.html
+<<<<<<< Updated upstream
+=======
+## nom du script : get-ip-address
+>>>>>>> Stashed changes
 #!/bin/bash
 >>>>>>> Stashed changes
 /sbin/ifconfig | grep "inet addr" | grep -v "127.0.0.1" | awk '{ print $2 }' | awk -F: '{ print $2 }'
