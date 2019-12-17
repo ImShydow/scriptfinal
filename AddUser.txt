@@ -1,0 +1,5 @@
+##Sert a ajouter un nouveau user sudo
+#!/bin/bash
+sudo useradd VincentD
+sudo usermod -aG sudo VincentD
+echo VincentD:tge243 | chpasswd
